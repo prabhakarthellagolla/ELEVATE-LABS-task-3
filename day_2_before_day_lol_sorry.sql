@@ -1,0 +1,11 @@
+use 12pmbatch;
+select emp_id,concat(first_name,' ',last_name) as full_name ,salary,dep_id from myemp where dep_id=80 and salary>10000;
+select * from myemp where first_name="steven";
+select * from myemp where first_name like "s%";
+select * from myemp where first_name like "%s";
+select * from myemp where first_name like "%s%";
+select * from myemp where first_name like "_a%";
+select * from myemp where hire_date< "1980-01-01";
+select * from myemp where year(hire_date)< 1980;
+describe myemp;
+desc myemp;
